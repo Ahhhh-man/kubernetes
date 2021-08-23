@@ -1,5 +1,5 @@
 # Kubernetes
-
+![](imgs/kubernetes.png)
 ## What is kubernetes?
 > Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
  
@@ -30,3 +30,8 @@ If we go with the Provider-managed Kubernetes service, we've found that it costs
 In contrast, if we choose self-management, do we have the time and expertise to run the Kubernetes cluster? When it comes to flexibility, though, self-managed Kubernetes services have considerably more possibilities.
 Finally, take into account your application needs, available time for management duties, and skill level. 
 
+## Clusters
+
+A Kubernetes cluster consists of a collection of nodes that execute containerized apps. The Kubernetes cluster enables the programme to operate on numerous computers and in different settings. 
+
+![](imgs/cluster.png)
