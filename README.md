@@ -23,3 +23,10 @@
  -   Vagrant. HashiCorp
 
 
+## Self-managed vs Provider-managed
+
+Considering the requirements, cost, and flexibility of an application.
+If we go with the Provider-managed Kubernetes service, we've found that it costs around $100 per month only to manage the cluster.
+In contrast, if we choose self-management, do we have the time and expertise to run the Kubernetes cluster? When it comes to flexibility, though, self-managed Kubernetes services have considerably more possibilities.
+Finally, take into account your application needs, available time for management duties, and skill level. 
+
