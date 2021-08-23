@@ -35,3 +35,6 @@ Finally, take into account your application needs, available time for management
 A Kubernetes cluster consists of a collection of nodes that execute containerized apps. The Kubernetes cluster enables the programme to operate on numerous computers and in different settings. 
 
 ![](imgs/cluster.png)
+
+## commands
+- `kubectl`
