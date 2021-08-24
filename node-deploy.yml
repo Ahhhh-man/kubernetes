@@ -15,14 +15,27 @@ spec:
       containers:
         - name: node
           image: monotiller/eng89_node_app
+          # command:
+          # - /bin/sh
+          # - -c
+          # - node seeds/seed.js
           ports:
             - containerPort: 3000
           env:
             - name: DB_HOST
               value: mongodb://mongo:27017/posts
-          command: ["/bin/sh","-c"]
-          args: ["node","seeds/seed.js"]
+          # command: ["/bin/sh"]
+          # args: ["-c", "node","seeds/seed.js"]
           imagePullPolicy: Always
+
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 256Mi
+              cpu: "0.2"
+
 ---
 apiVersion: v1
 kind: Service
