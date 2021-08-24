@@ -18,10 +18,10 @@ spec:
           ports:
             - containerPort: 3000
           env:
-            - name: MONGO_URL
+            - name: DB_HOST
               value: mongodb://mongo:27017/posts
-          command:
-            - node app/seeds/seed.js
+          command: ["/bin/sh","-c"]
+          args: ["node","seeds/seed.js"]
           imagePullPolicy: Always
 ---
 apiVersion: v1
